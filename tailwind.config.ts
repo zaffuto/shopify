@@ -1,6 +1,7 @@
+import plugin from 'tailwindcss/plugin';
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +15,20 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [ 
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/container-queries'),
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          "animation-delay": (value) => ({
+            "animation-delay": value
+          })
+        },
+        {
+          values: theme('spacing'), // Usa un tema, como spacing, para valores comunes
+        }
+      );
+    })
+  ],
+} satisfies Config;
