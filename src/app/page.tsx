@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center h-auto p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-background text-foreground">
-      <main className="flex flex-col gap-8 row-start-2 items-center justify-start sm:items-start">
+    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-background text-foreground">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start mt-2">
         <Image
           className="dark:invert"
           src="/smart_logo-bg.png" // Cambia a la ruta de tu logo de Smarterbot
@@ -23,11 +23,10 @@ export default function Home() {
         
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] max-w-xl">
           <li className="mb-2">
-            Adopción de Inteligencia Artificial en sistemas SCM (Supply Chain Management) 🚀
+            💡 ¡Optimiza tu tienda online con las últimas innovaciones en IA!
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-            ¡Solo para tiendas con licencias Shopify Advanced!
+              Solo para tiendas con licencias Shopify Advanced.
             </code>
-            .
           </li>
           <li>Pedro es un experto en la adopción de Inteligencia Artificial en sistemas SCM</li>
         </ol>
@@ -40,6 +39,15 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Crear cuenta
+          </a>
+
+          <a
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            href="https://api.whatsapp.com/send/?phone=56979540471&text=Hola%2C+quiero+saber+m%C3%A1s+sobre+Smarterbot&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contáctanos por WhatsApp
           </a>
         </div>
       </main>
