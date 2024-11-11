@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/smarterbot-logo.svg" // Cambia a la ruta de tu logo de Smarterbot
+          src="/smart_logo-bg.png" // Cambia a la ruta de tu logo de Smarterbot
           alt="Smarterbot logo"
           width={200}
           height={50}
