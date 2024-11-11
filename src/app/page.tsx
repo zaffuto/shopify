@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-background text-foreground">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center h-auto p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-background text-foreground">
+      <main className="flex flex-col gap-8 row-start-2 items-center justify-start sm:items-start">
         <Image
           className="dark:invert"
           src="/smart_logo-bg.png" // Cambia a la ruta de tu logo de Smarterbot
@@ -25,7 +25,7 @@ export default function Home() {
           <li className="mb-2">
             Adopción de Inteligencia Artificial en sistemas SCM (Supply Chain Management) 🚀
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-            ¡Solo para tiendas con licencias Shopify o Shopify Advanced!
+            ¡Solo para tiendas con licencias Shopify Advanced!
             </code>
             .
           </li>
@@ -39,16 +39,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-           
             Crear cuenta
           </a>
-         
         </div>
       </main>
 
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-  
-       
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://smarterbot.cl"
