@@ -24,14 +24,12 @@ export default function Home() {
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] max-w-xl">
           <li className="mb-2">
             Adopción de Inteligencia Artificial en sistemas SCM (Supply Chain Management) 🚀
-
-¡Solo para tiendas con licencias Shopify o Shopify Advanced!
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-            Pedro es un experto en la adopción de Inteligencia Artificial en sistemas SCM
+            ¡Solo para tiendas con licencias Shopify o Shopify Advanced!
             </code>
             .
           </li>
-          <li>Personaliza tus flujos y conecta con tus clientes.</li>
+          <li>Pedro es un experto en la adopción de Inteligencia Artificial en sistemas SCM</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
